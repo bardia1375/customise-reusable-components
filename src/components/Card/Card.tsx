@@ -4,8 +4,8 @@ type PaddingSize = 'none' | 'sm' | 'md' | 'lg';
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
-  title?: React.ReactNode;
-  subtitle?: React.ReactNode;
+  cardTitle?: React.ReactNode;
+  cardSubtitle?: React.ReactNode;
   footer?: React.ReactNode;
   elevated?: boolean;
   bordered?: boolean;
@@ -15,8 +15,8 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const Card: React.FC<CardProps> = ({
   children,
-  title,
-  subtitle,
+  cardTitle,
+  cardSubtitle,
   footer,
   elevated = false,
   bordered = true,
@@ -47,10 +47,10 @@ const Card: React.FC<CardProps> = ({
   
   return (
     <div className={cardClasses} {...props}>
-      {title && (
+      {cardTitle && (
         <div className={`border-b border-gray-200 ${paddingClasses}`}>
-          <h3 className="text-lg font-medium text-gray-900">{title}</h3>
-          {subtitle && <p className="mt-1 text-sm text-gray-500">{subtitle}</p>}
+          <h3 className="text-lg font-medium text-gray-900">{cardTitle}</h3>
+          {cardSubtitle && <p className="mt-1 text-sm text-gray-500">{cardSubtitle}</p>}
         </div>
       )}
       <div className={paddingClasses}>{children}</div>
