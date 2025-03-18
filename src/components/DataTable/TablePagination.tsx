@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from '../../components';
+import { Button } from '../ui';
+
 
 interface TablePaginationProps {
   currentPage: number;

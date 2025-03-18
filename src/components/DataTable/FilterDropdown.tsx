@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Button } from '../../components';
+import { Button } from '../ui';
 import { Column } from './index';
 
 interface FilterDropdownProps {

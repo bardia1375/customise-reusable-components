@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from '../../components';
+import { Button } from '../ui';
 import { FormFields } from './FormFields';
 import { validateForm } from './validation';
 import { DataTable } from '../DataTable';

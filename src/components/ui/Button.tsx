@@ -37,7 +37,6 @@ const buttonVariants = cva(
 
 type ButtonType = 'button' | 'submit' | 'reset';
 
-// This is correctly implemented in your component - extending ButtonProps with VariantProps
 interface ButtonProps extends 
   React.ButtonHTMLAttributes<HTMLButtonElement>,
   VariantProps<typeof buttonVariants> {

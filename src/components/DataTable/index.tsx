@@ -1,5 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Input, Button } from '../../components';
+import { Input } from '../../components';
+import { Button } from '../ui';
+
 import { TableHeader } from './TableHeader';
 import { TablePagination } from './TablePagination';
 import { FilterDropdown } from './FilterDropdown';
